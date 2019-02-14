@@ -1,0 +1,62 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 25%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #E0E0E0; /* Gray */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav input {
+  width: 90%;
+  margin: auto;
+}
+
+.errormessage {
+  text-align: center;
+  color: red;
+}
+
+.instructions {
+  text-align: left;
+  padding: 20px;
+  color: black;
+}
+
+.sidebarfooter {
+  font-size: 8pt;
+  text-align: center;
+  vertical-align: text-bottom;
+  color: black;
+}
+
+.main {
+    width: 100%;
+}
+
+.zoombutton {
+    width: 40px;
+    margin:auto;
+}
+
+.zoombuttons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#canvas {
+    position: fixed;
+    margin-left:25%;
+    top:0;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+    margin:auto;
+    width:75%;
+    height:100%;
+}

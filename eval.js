@@ -229,6 +229,9 @@ function preparse(s) {
         // parse parens
         if (index < s.length) {
             if (inset(s.charAt(index), "()")) {
+                if (tokens.length > 0 && tokens[tokens.length-1].type == "number") { // implicit multiplication
+                    tokens.push(new Token("operator", "*"));
+                }
                 tokens.push(new Token("paren", s.charAt(index)));
                 index += 1;
             }
@@ -272,6 +275,10 @@ function preparse(s) {
             index += 1;
         }
     }
+
+    tokens.forEach(function(token) {
+       console.log(token.type + " " + token.value);
+    });
 
     return tokens;
 }

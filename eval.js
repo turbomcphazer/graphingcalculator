@@ -229,7 +229,7 @@ function preparse(s) {
         // parse parens
         if (index < s.length) {
             if (inset(s.charAt(index), "()")) {
-                if (tokens.length > 0 && tokens[tokens.length-1].type == "number") { // implicit multiplication
+                if (tokens.length > 0 && tokens[tokens.length - 1].type == "number" && s.charAt(index) == "(") { // implicit multiplication
                     tokens.push(new Token("operator", "*"));
                 }
                 tokens.push(new Token("paren", s.charAt(index)));

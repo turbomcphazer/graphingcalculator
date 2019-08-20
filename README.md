@@ -6,7 +6,7 @@ A little graphing calculator:
 - then runs through a range of values for x, subbing x into the string
 - calculates the resulting value
 - and adds it to a list
-- which gets renders it onto a canvas
+- which gets rendered onto a canvas
 
 This correctly handles a number of functions, complex formulas, and zooming.
 The styling could be more responsive and the rendering (of line and of zoom) could be smoother/animated.
